@@ -1,0 +1,125 @@
+body{
+ margin: 0px; /*By default always the margin of the body is 8px*/
+}
+
+/*Master Styles*/
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/*Navbar Sytle*/
+
+.navWrapper{
+	display: flex; /*make all dives content inline*/
+	justify-content: space-between; /*make the half of left side in the roght side*/
+	padding: 38px;
+	
+}
+.leftSideWrapper{
+	display: flex; 
+}
+
+.navWrapper > .leftSideWrapper > div{
+	margin-right: 20px; /*space between two name links*/ 
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.rightSideWrapper{
+	float: right;
+}
+
+.Links{
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s; 
+}
+
+.Links a{
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+/* the color changes when i have the hovr action 
+:hover --> when this action is done doing inside the pracits after this action*/
+
+.Links:hover{
+	border-bottom: 1px solid black;
+}
+
+.Links a:hover{
+	color: black;
+}
+
+/*portfolio Style */
+.portfolioItemsWrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolioItemWrapper{
+	position: relative; /* allow us to be more flexibility how to position each item inside of it*/
+}
+
+.portfolioImgBackground{
+	height: 350px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.imgTextWrapper{
+	position: absolute;
+	top: 0; /*here all logos and descrription apear*/ 
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	/*padding-left: 100px;
+	padding-right: 100px;*/
+}
+
+.imgLogo img{
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.imgTextWrapper .description{
+	transition: 1s;
+	font-weight: 600;
+	color: transparent; /*to make the description dont apear intill hover it*/
+}
+
+
+.imgTextWrapper:hover .description{
+	font-weight: 600;
+	color: #5533FF;
+}
+
+.imgDark{
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+/*About Page*/
+
+.TwoColom{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.theImage img{
+	width: 80%;
+} 
+
+.Content{
+	padding: 30px;
+}
+
+.Content h1{
+	color: #5533FF;
+}
